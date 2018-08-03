@@ -1,8 +1,10 @@
 package com.example.bga_s.nanonews
 
-class FeedItem(
-    val title:String,
-    val link:String,
-    val description:String,
-    val thumbnail:String
-)
+import io.realm.RealmObject
+
+open class FeedItem (
+    var title:String ="",
+    var link:String = "",
+    var description:String = "",
+    var thumbnail:String =""
+    ): RealmObject()
